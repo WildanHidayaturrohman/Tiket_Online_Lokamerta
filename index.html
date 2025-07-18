@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <title>INPUT PEMESANAN TIKET</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="form-container">
+    <h2>INPUT PEMESANAN TIKET</h2>
+
+    <div class="rekening-info">
+      <strong>Transfer ke Rekening:</strong><br>
+      BCA - 1234567890 a.n. Lokawisata Indah
+    </div>
+
+    <form id="form">
+      <label for="nama">Nama:</label>
+      <input type="text" id="nama" name="nama" required>
+
+      <label for="whatsapp">Nomor WhatsApp:</label>
+      <input type="tel" id="whatsapp" name="whatsapp" required>
+
+      <label for="paket">Paket Wisata:</label>
+      <select id="paket" name="paket" required>
+        <option value="">-- Pilih Paket --</option>
+        <option value="Paket A">Paket A</option>
+        <option value="Paket B">Paket B</option>
+      </select>
+
+      <label for="tanggal">Tanggal Kunjungan:</label>
+      <input type="date" id="tanggal" name="tanggal" required>
+
+      <label for="foto">Bukti Pembayaran:</label>
+      <input type="file" id="foto" name="foto" accept="image/*" required>
+
+      <input type="submit" value="Pesan">
+    </form>
+
+    <div id="hasil"></div>
+  </div>
+
+  <div id="footer">
+    Salam hangat dari kami pengelola Lokamerta
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

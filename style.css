@@ -1,0 +1,106 @@
+/* Mengatur semua elemen agar box-sizing menyertakan padding dan border */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0c0a0a;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Container form */
+#form-container {
+  max-width: 500px;
+  width: 90%;
+  margin: 40px auto;
+  background-color: #f1f1f7;
+  border: 2px solid #da0808;
+  border-radius: 10px;
+  padding: 20px;
+  overflow: hidden;
+}
+
+/* Judul Form */
+#form-container h2 {
+  text-align: center;
+  color: #1E90FF;
+  margin-bottom: 15px;
+}
+
+/* Info Rekening */
+.rekening-info {
+  background-color: #fff3cd;
+  color: #856404;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  border: 1px solid #ffeeba;
+}
+
+/* Label */
+#form-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Semua input dan select */
+#form-container input[type="text"],
+#form-container input[type="date"],
+#form-container input[type="tel"],
+#form-container select,
+#form-container input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #f1d0d0;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  font-size: 14px;
+}
+
+/* Agar input file tidak meluber */
+#form-container input[type="file"] {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Tombol submit */
+#form-container input[type="submit"] {
+  background-color: #1E90FF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Hover effect */
+#form-container input[type="submit"]:hover {
+  background-color: #004B8D;
+}
+
+/* Footer */
+#footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 12px;
+  color: #f7f1f1;
+}
+
+/* Hasil output */
+#hasil {
+  color: green;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 14px;
+}
